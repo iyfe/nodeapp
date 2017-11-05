@@ -2,11 +2,11 @@
 
 {{#if error}} <span>{{error}}</span>{{/if}}
 
+
+<div class="container">
+<p> Please take note of the generated student ID as you will require it for future transactions </p>
+
 <form method="POST" action="/student/add">
-  <div class="form-group">
-    <label>ID</label>
-    <input type="text" name="id" class="form-control" placeholder="Add ID">
-  </div>
   <div class="form-group">
     <label>First Name</label>
     <input type="text" name="first_name" class="form-control" placeholder="First Name">
@@ -38,4 +38,4 @@
 
   <input type="submit" class="btn btn-primary" value="Save">
 </form>
-
+</div>
