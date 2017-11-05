@@ -29,42 +29,15 @@ app.post('/student/add', (req, res,next) => {
       if (err) { 
         res.send({ 'error': 'An error has occurred' }); 
       } else {
-        res.redirect('/');
+
+        console.log(result.ops);
+        res.render('liststudent',{student:student});
       }
     });
   console.log("Entry successful");
   });
 
 
-//List student page 
-app.get('/student/list', function(req, res, next){
-  res.render('editstudent');
-   console.log("list");
-});
-// process student id 
-app.post('/student/:id', (req, res) => {
-    const id = req.params.id;
-    const details = { '_id': new ObjectID(id) };
-    db.collection('students').find(details, (err, item) => {
-      if (err) {
-        res.send({'error':'An error has occurred'});
-      } else {
-        res.render('liststudent');
-      } 
-    });
-  });
-
-app.delete('/student/:id', (req, res) => {
-    const id = req.params.id;
-    const details = { '_id': new ObjectID(id) };
-    db.collection('student').remove(details, (err, item) => {
-      if (err) {
-        res.send({'error':'An error has occurred'});
-      } else {
-        res.send('Student ' + id + ' deleted!');
-      } 
-    });
-  });
 
 
 };
