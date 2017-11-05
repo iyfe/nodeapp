@@ -3,24 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Student Management System</title>
-    <link rel="stylesheet" href="hhttps://bootswatch.com/sandstone/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">    
   </head>
   <body>
-    <nav class="navbar navbar-toggleable-md  bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Student Management System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="/">Student Management System</a>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      
-      <a class="nav-item nav-link" href="/student/add">Add New Student</a>
-      <a class="nav-item nav-link" href="/student/edit">Edit Student</a>
-      <a class="nav-item nav-link" href="/student/list">List Student</a>
-    </div>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/student/add">Add New Student</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/student/list">List Student</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/student/all">List All Students</a>
+      </li>
+    </ul>
   </div>
 </nav>
+
 <div class="container ">
   <div class="row justify-content-md-center">
     <h1>Student Database Management</h1>

@@ -10,14 +10,27 @@
   <li class="list-group-item"><strong>Next of kin Phone: </strong>{{student.nok_phone}}</li>
 </ul>
 
+<br>
 
-
-<form method="PUT" action="/student/edit">
+<div class="row justify-content-md-center">
+	<div class="col">
+		<form method="PUT" action="/student/edit/{{student._id}}">
   <input type="submit" class="btn btn-info " value="EDIT">
 </form>
 
-<form method="POST" action="/student/delete/{{student._id}}">
+	</div>
+	<div class="col">
+		<form method="POST" action="/student/delete/{{student._id}}">
   <input type="submit" class="btn btn-danger " value="Delete">
 </form>
-<a class="btn btn-success " href="/">Done</a>
+	</div>
+	<div class="col">
+			<a class="btn btn-success " href="/">Done</a>
+
+	</div>
+
+</div>
+
+
+
 </div>
